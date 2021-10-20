@@ -5,8 +5,7 @@ import "./styles.css";
 export default function Calendar() {
   const weekDaysShort = moment.weekdaysShort();
   const allMonths = moment.months();
-  const tempDateObj = moment();
-  const [dateObj, setDateObj] = useState(tempDateObj);
+  const [dateObj, setDateObj] = useState(moment());
   const [currentYear, setCurrentYear] = useState();
   const [currentMonth, setCurrentMonth] = useState();
   const [today, setToday] = useState();
